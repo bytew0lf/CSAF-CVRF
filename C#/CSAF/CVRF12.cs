@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,238 @@ using System.Threading.Tasks;
 
 namespace CSAF.CVRF12
 {
+    public class CVRFDocCollection : ICollection<cvrfdoc>
+    {
+        private List<cvrfdoc> cvrfdocs;
 
+        public CVRFDocCollection()
+        {
+            cvrfdocs = new List<cvrfdoc>();
+        }
+        
+        public cvrfdoc this[int index]
+        {
+            get
+            {
+                if (index >= cvrfdocs.Count)
+                {
+                    return null;
+                }
+                return (cvrfdoc)cvrfdocs[index];
+            }
+            set { cvrfdocs[index] = value; }
+        }
+
+        public int Count
+        {
+            get { return cvrfdocs.Count; }
+        }
+
+        public bool IsReadOnly
+        {
+            get { return false; }
+        }
+
+        public static bool IsSynchronized
+        {
+            get { return false; }
+        }
+
+        public void Add(cvrfdoc item)
+        {
+            if (!Contains(item))
+            {
+                cvrfdocs.Add(item);
+            }
+            else
+            {
+                throw new ArgumentException(Resources.Add_ArgumentException, nameof(item));
+            }
+        }
+
+        public void Clear()
+        {
+            cvrfdocs.Clear();
+        }
+
+        public bool Contains(cvrfdoc item)
+        {
+            bool found = false;
+            foreach (cvrfdoc doc in cvrfdocs)
+            {
+                if (doc.Equals(item))
+                {
+                    found = true;
+                }
+            }
+            return found;
+        }
+
+        public void CopyTo(cvrfdoc[] array, int arrayIndex)
+        {
+            if (array == null)
+                throw new ArgumentNullException(string.Format(System.Globalization.CultureInfo.InvariantCulture, Resources.ArgumentNullException, nameof(array)));
+            if (arrayIndex < 0)
+                throw new ArgumentOutOfRangeException(Resources.ArgumentOutOfRangeException);
+            if (Count > array.Length - arrayIndex + 1)
+                throw new ArgumentException(Resources.CopyTo_ArgumentException);
+
+            for (int i = 0; i < cvrfdocs.Count; i++)
+            {
+                array[i + arrayIndex] = cvrfdocs[i];
+            }
+        }
+
+        public IEnumerator<cvrfdoc> GetEnumerator()
+        {
+            return new CVRFDocEnumerator(this);
+        }
+
+        public bool Remove(cvrfdoc item)
+        {
+            bool result = false;
+
+            // Iterate the inner collection to 
+            // find the box to be removed.
+            for (int i = 0; i < cvrfdocs.Count; i++)
+            {
+                cvrfdoc curdoc = (cvrfdoc)cvrfdocs[i];
+
+                if (new SameDoc().Equals(curdoc, item))
+                {
+                    cvrfdocs.RemoveAt(i);
+                    result = true;
+                    break;
+                }
+            }
+            return result;
+        }
+
+        public void RemoveAt(int index)
+        {
+            cvrfdocs.RemoveAt(index);
+        }
+
+        public void AddRange(cvrfdoc[] value)
+        {
+            cvrfdocs.AddRange(value);
+        }
+
+        public Array ToArray()
+        {
+            return cvrfdocs.ToArray();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return new CVRFDocEnumerator(this);
+        }
+    }
+
+    public class CVRFDocEnumerator : IEnumerator<cvrfdoc>
+    {
+        private readonly CVRFDocCollection _collection;
+        private int curIndex;
+        private cvrfdoc curDoc;
+        private bool disposedValue;
+
+        public CVRFDocEnumerator(CVRFDocCollection collection)
+        {
+            _collection = collection;
+            curIndex = -1;
+            curDoc = default;
+        }
+
+        ~CVRFDocEnumerator()
+        {
+            Dispose(false);
+        }
+
+        public cvrfdoc Current 
+        {
+            get { return curDoc; }
+        }
+
+        object IEnumerator.Current
+        {
+            get { return curDoc; }
+        }
+
+        public bool MoveNext()
+        {
+            if (++curIndex >= _collection.Count)
+            {
+                return false;
+            }
+            else
+            {
+                curDoc = _collection[curIndex];
+            }
+            return true;
+        }
+
+        public void Reset()
+        {
+            curIndex = -1;
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposedValue)
+            {
+                if (disposing)
+                {
+                    // TODO: dispose managed state (managed objects)
+                }
+
+                // TODO: free unmanaged resources (unmanaged objects) and override finalizer
+                // TODO: set large fields to null
+                disposedValue = true;
+            }
+        }
+        
+        public void Dispose()
+        {
+            // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+            Dispose(disposing: true);
+            GC.SuppressFinalize(this);
+        }
+    }
+
+    public class SameDoc : EqualityComparer<cvrfdoc>
+    {
+        public override bool Equals(cvrfdoc x, cvrfdoc y)
+        {
+            if (x == null)
+            {
+                throw new ArgumentNullException(string.Format(System.Globalization.CultureInfo.InvariantCulture, Resources.ArgumentNullException, nameof(x)));
+            }
+
+            if (y == null)
+            {
+                throw new ArgumentNullException(string.Format(System.Globalization.CultureInfo.InvariantCulture, Resources.ArgumentNullException, nameof(y)));
+            }
+
+            if (x.Equals(y))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public override int GetHashCode(cvrfdoc obj)
+        {
+            if (obj == null)
+            {
+                throw new ArgumentNullException(string.Format(System.Globalization.CultureInfo.InvariantCulture, Resources.ArgumentNullException, nameof(obj)));
+            }
+
+            return obj.GetHashCode();
+        }
+    }
 
     // HINWEIS: Für den generierten Code ist möglicherweise mindestens .NET Framework 4.5 oder .NET Core/Standard 2.0 erforderlich.
     /// <remarks/>

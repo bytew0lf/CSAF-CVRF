@@ -1,5 +1,247 @@
-﻿namespace CSAF.CVRF20
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace CSAF.CVRF20
 {
+    public class RootCollection : ICollection<Rootobject>
+    {
+        private List<Rootobject> rootobjects;
+
+        public RootCollection()
+        {
+            rootobjects = new List<Rootobject>();
+        }
+
+        public Rootobject this[int index]
+        {
+            get
+            {
+                if (index >= rootobjects.Count)
+                {
+                    return null;
+                }
+                return (Rootobject)rootobjects[index];
+            }
+            set { rootobjects[index] = value; }
+        }
+
+        public int Count
+        {
+            get { return rootobjects.Count; }
+        }
+
+        public bool IsReadOnly
+        {
+            get { return false; }
+        }
+
+        public static bool IsSynchronized
+        {
+            get { return false; }
+        }
+
+        public void Add(Rootobject item)
+        {
+            if (!Contains(item))
+            {
+                rootobjects.Add(item);
+            }
+            else
+            {
+                throw new ArgumentException(Resources.Add_ArgumentException, nameof(item));
+            }
+        }
+
+        public void Clear()
+        {
+            rootobjects.Clear();
+        }
+
+        public bool Contains(Rootobject item)
+        {
+            bool found = false;
+            foreach (Rootobject obj in rootobjects)
+            {
+                if (obj.Equals(item))
+                {
+                    found = true;
+                }
+            }
+            return found;
+        }
+
+        public void CopyTo(Rootobject[] array, int arrayIndex)
+        {
+            if (array == null)
+                throw new ArgumentNullException(string.Format(System.Globalization.CultureInfo.InvariantCulture, Resources.ArgumentNullException, nameof(array)));
+            if (arrayIndex < 0)
+                throw new ArgumentOutOfRangeException(Resources.ArgumentOutOfRangeException);
+            if (Count > array.Length - arrayIndex + 1)
+                throw new ArgumentException(Resources.CopyTo_ArgumentException);
+
+            for (int i = 0; i < rootobjects.Count; i++)
+            {
+                array[i + arrayIndex] = rootobjects[i];
+            }
+        }
+
+        public IEnumerator<Rootobject> GetEnumerator()
+        {
+            return new RootEnumerator(this);
+        }
+
+        public bool Remove(Rootobject item)
+        {
+            bool result = false;
+
+            // Iterate the inner collection to 
+            // find the box to be removed.
+            for (int i = 0; i < rootobjects.Count; i++)
+            {
+                Rootobject curobj = (Rootobject)rootobjects[i];
+
+                if (new SameRootObject().Equals(curobj, item))
+                {
+                    rootobjects.RemoveAt(i);
+                    result = true;
+                    break;
+                }
+            }
+            return result;
+        }
+
+        public void RemoveAt(int index)
+        {
+            rootobjects.RemoveAt(index);
+        }
+
+        public void AddRange(Rootobject[] value)
+        {
+            rootobjects.AddRange(value);
+        }
+
+        public Array ToArray()
+        {
+            return rootobjects.ToArray();
+        }
+
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return new RootEnumerator(this);
+        }
+    }
+
+    public class RootEnumerator : IEnumerator<Rootobject>
+    {
+        private readonly RootCollection _collection;
+        private int curIndex;
+        private Rootobject curRoot;
+        private bool disposedValue;
+
+        public RootEnumerator(RootCollection collection)
+        {
+            _collection = collection;
+            curIndex = -1;
+            curRoot = default;
+        }
+
+        public Rootobject Current
+        {
+            get { return curRoot; }
+        }
+
+        object IEnumerator.Current
+        {
+            get { return curRoot; }
+        }
+
+        public bool MoveNext()
+        {
+            if (++curIndex >= _collection.Count)
+            {
+                return false;
+            }
+            else
+            {
+                curRoot = _collection[curIndex];
+            }
+            return true;
+        }
+
+        public void Reset()
+        {
+            curIndex = -1;
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposedValue)
+            {
+                if (disposing)
+                {
+                    // TODO: dispose managed state (managed objects)
+                }
+
+                // TODO: free unmanaged resources (unmanaged objects) and override finalizer
+                // TODO: set large fields to null
+                disposedValue = true;
+            }
+        }
+
+        ~RootEnumerator()
+        {
+            // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+            Dispose(disposing: false);
+        }
+
+        public void Dispose()
+        {
+            // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+            Dispose(disposing: true);
+            System.GC.SuppressFinalize(this);
+        }
+    }
+
+    public class SameRootObject : EqualityComparer<Rootobject>
+    {
+        public override bool Equals(Rootobject x, Rootobject y)
+        {
+            if (x == null)
+            {
+                throw new ArgumentNullException(string.Format(System.Globalization.CultureInfo.InvariantCulture, Resources.ArgumentNullException, nameof(x)));
+            }
+
+            if (y == null)
+            {
+                throw new ArgumentNullException(string.Format(System.Globalization.CultureInfo.InvariantCulture, Resources.ArgumentNullException, nameof(y)));
+            }
+
+            if (x.Equals(y))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public override int GetHashCode(Rootobject obj)
+        {
+            if (obj == null)
+            {
+                throw new ArgumentNullException(string.Format(System.Globalization.CultureInfo.InvariantCulture, Resources.ArgumentNullException, nameof(obj)));
+            }
+
+            return obj.GetHashCode();
+        }
+    }
+
+    /// <summary>
+    /// Automatically generated code
+    /// </summary>
     public class Rootobject
     {
         public Document document { get; set; }

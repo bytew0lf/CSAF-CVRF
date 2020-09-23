@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSAF", "CSAF\CSAF.csproj", "{A76485B4-4359-4231-80CB-50015D25F64A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAPP", "TestAPP\TestAPP.csproj", "{DA408948-2693-4D18-B94C-379D61AEDB25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A76485B4-4359-4231-80CB-50015D25F64A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A76485B4-4359-4231-80CB-50015D25F64A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A76485B4-4359-4231-80CB-50015D25F64A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A76485B4-4359-4231-80CB-50015D25F64A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA408948-2693-4D18-B94C-379D61AEDB25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA408948-2693-4D18-B94C-379D61AEDB25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA408948-2693-4D18-B94C-379D61AEDB25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA408948-2693-4D18-B94C-379D61AEDB25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C88FD21E-5D90-476B-B884-6C9B0B3AE4DC}
+	EndGlobalSection
+EndGlobal

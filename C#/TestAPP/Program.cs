@@ -33,7 +33,7 @@ namespace TestAPP
 
 
             Rootobject docroot;
-            using (TextReader tr = new StreamReader("cvrf-rhba-2018-0489-modified.json"))
+            using (TextReader tr = new StreamReader("CVE-2018-0171-modified.json"))
             {                
                 string json = tr.ReadToEnd();
                 byte[] utf8bytes = Encoding.UTF8.GetBytes(json);

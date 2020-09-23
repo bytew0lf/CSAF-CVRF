@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSAF.CVRF20
+﻿namespace CSAF.CVRF20
 {
-
     public class Rootobject
     {
         public Document document { get; set; }

@@ -15,6 +15,7 @@ https://github.com/oasis-tcs/csaf
     {
     }
 from the Namespace
+
   7. Select EDIT -> Paste Special -> Paste JSON As Classes
   8. Add .CVRF20 to the end of your Namespace
 

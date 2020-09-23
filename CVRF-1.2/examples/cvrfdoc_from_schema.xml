@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cvrfdoc xmlns="http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v1.2/cvrf">
+  <DocumentTitle xml:lang="en">DocumentTitle1</DocumentTitle>
+  <DocumentType xml:lang="en">DocumentType1</DocumentType>
+  <DocumentPublisher Type="Vendor" VendorID="VendorID1">
+    <ContactDetails xml:lang="en">ContactDetails1</ContactDetails>
+    <IssuingAuthority xml:lang="en">IssuingAuthority1</IssuingAuthority>
+  </DocumentPublisher>
+  <DocumentTracking>
+    <Identification>
+      <ID xml:lang="en">ID1</ID>
+      <Alias xml:lang="en">Alias1</Alias>
+      <Alias xml:lang="en">Alias2</Alias>
+      <Alias xml:lang="fr">Alias3</Alias>
+    </Identification>
+    <Status>Draft</Status>
+    <Version>Token1</Version>
+    <RevisionHistory>
+      <Revision>
+        <Number>Token1</Number>
+        <Date>1900-01-01T01:01:01+01:00</Date>
+        <Description xml:lang="en">Description1</Description>
+      </Revision>
+      <Revision>
+        <Number>Token2</Number>
+        <Date>0001-01-01T00:00:00+01:00</Date>
+        <Description xml:lang="en">Description2</Description>
+      </Revision>
+      <Revision>
+        <Number>Token3</Number>
+        <Date>9999-12-31T23:59:59.9999999+01:00</Date>
+        <Description xml:lang="fr">Description3</Description>
+      </Revision>
+    </RevisionHistory>
+    <InitialReleaseDate>1900-01-01T01:01:01+01:00</InitialReleaseDate>
+    <CurrentReleaseDate>1900-01-01T01:01:01+01:00</CurrentReleaseDate>
+    <Generator>
+      <Engine xml:lang="en">Engine1</Engine>
+      <Date>1900-01-01T01:01:01+01:00</Date>
+    </Generator>
+  </DocumentTracking>
+  <DocumentNotes>
+    <Note Title="Title1" Audience="Audience1" Type="General" Ordinal="1" xml:lang="en">Note1</Note>
+    <Note Title="Title2" Audience="Audience2" Type="Details" Ordinal="79228162514264337593543950335" xml:lang="en">Note2</Note>
+    <Note Title="Title3" Audience="Audience3" Type="Description" Ordinal="2" xml:lang="fr">Note3</Note>
+  </DocumentNotes>
+  <DocumentDistribution xml:lang="en">DocumentDistribution1</DocumentDistribution>
+  <AggregateSeverity Namespace="http://uri1" xml:lang="en">AggregateSeverity1</AggregateSeverity>
+  <DocumentReferences>
+    <Reference Type="External">
+      <URL>http://uri1</URL>
+      <Description xml:lang="en">Description1</Description>
+    </Reference>
+    <Reference Type="External">
+      <URL>http://uri2</URL>
+      <Description xml:lang="en">Description2</Description>
+    </Reference>
+    <Reference Type="Self">
+      <URL>http://uri3</URL>
+      <Description xml:lang="fr">Description3</Description>
+    </Reference>
+  </DocumentReferences>
+  <Acknowledgments>
+    <Acknowledgment>
+      <Name xml:lang="en">Name1</Name>
+      <Name xml:lang="en">Name2</Name>
+      <Name xml:lang="fr">Name3</Name>
+      <Organization xml:lang="en">Organization1</Organization>
+      <Organization xml:lang="en">Organization2</Organization>
+      <Organization xml:lang="fr">Organization3</Organization>
+      <Description xml:lang="en">Description1</Description>
+      <URL>http://uri1</URL>
+      <URL>http://uri2</URL>
+      <URL>http://uri3</URL>
+    </Acknowledgment>
+    <Acknowledgment>
+      <Name xml:lang="de">Name4</Name>
+      <Name xml:lang="da">Name5</Name>
+      <Name xml:lang="el">Name6</Name>
+      <Organization xml:lang="de">Organization4</Organization>
+      <Organization xml:lang="da">Organization5</Organization>
+      <Organization xml:lang="el">Organization6</Organization>
+      <Description xml:lang="en">Description2</Description>
+      <URL>http://uri4</URL>
+      <URL>http://uri5</URL>
+      <URL>http://uri6</URL>
+    </Acknowledgment>
+    <Acknowledgment>
+      <Name xml:lang="it">Name7</Name>
+      <Name xml:lang="en-US">Name8</Name>
+      <Name xml:lang="en">Name9</Name>
+      <Organization xml:lang="it">Organization7</Organization>
+      <Organization xml:lang="en-US">Organization8</Organization>
+      <Organization xml:lang="en">Organization9</Organization>
+      <Description xml:lang="fr">Description3</Description>
+      <URL>http://uri7</URL>
+      <URL>http://uri8</URL>
+      <URL>http://uri9</URL>
+    </Acknowledgment>
+  </Acknowledgments>
+  <ProductTree xmlns="http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v1.2/prod">
+    <Branch Type="Vendor" Name="Name1">
+      <FullProductName ProductID="Token1" CPE="http://uri1">FullProductName1</FullProductName>
+    </Branch>
+    <Branch Type="Product Family" Name="Name2">
+      <FullProductName ProductID="Token2" CPE="http://uri2">FullProductName2</FullProductName>
+    </Branch>
+    <Branch Type="Product Name" Name="Name3">
+      <FullProductName ProductID="Token3" CPE="http://uri3">FullProductName3</FullProductName>
+    </Branch>
+    <Relationship ProductReference="Token1" RelationType="Default Component Of" RelatesToProductReference="Token1">
+      <FullProductName ProductID="Token4" CPE="http://uri4">FullProductName4</FullProductName>
+      <FullProductName ProductID="Token5" CPE="http://uri5">FullProductName5</FullProductName>
+      <FullProductName ProductID="Token6" CPE="http://uri6">FullProductName6</FullProductName>
+    </Relationship>
+    <Relationship ProductReference="Token2" RelationType="Optional Component Of" RelatesToProductReference="Token2">
+      <FullProductName ProductID="Token7" CPE="http://uri7">FullProductName7</FullProductName>
+      <FullProductName ProductID="Token8" CPE="http://uri8">FullProductName8</FullProductName>
+      <FullProductName ProductID="Token9" CPE="http://uri9">FullProductName9</FullProductName>
+    </Relationship>
+    <Relationship ProductReference="Token3" RelationType="External Component Of" RelatesToProductReference="Token3">
+      <FullProductName ProductID="Token10" CPE="http://uri10">FullProductName10</FullProductName>
+      <FullProductName ProductID="Token11" CPE="http://uri11">FullProductName11</FullProductName>
+      <FullProductName ProductID="Token12" CPE="http://uri12">FullProductName12</FullProductName>
+    </Relationship>
+    <ProductGroups>
+      <Group GroupID="Token1">
+        <Description xml:lang="en">Description1</Description>
+        <ProductID>Token1</ProductID>
+        <ProductID>Token2</ProductID>
+        <ProductID>Token3</ProductID>
+      </Group>
+      <Group GroupID="Token2">
+        <Description xml:lang="en">Description2</Description>
+        <ProductID>Token4</ProductID>
+        <ProductID>Token5</ProductID>
+        <ProductID>Token6</ProductID>
+      </Group>
+      <Group GroupID="Token3">
+        <Description xml:lang="fr">Description3</Description>
+        <ProductID>Token7</ProductID>
+        <ProductID>Token8</ProductID>
+        <ProductID>Token9</ProductID>
+      </Group>
+    </ProductGroups>
+  </ProductTree>
+  <Vulnerability Ordinal="1" xmlns="http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v1.2/vuln">
+    <Title xml:lang="en">Title1</Title>
+    <ID SystemName="Token1">Token1</ID>
+    <Notes>
+      <Note Title="Title1" Audience="Audience1" Type="General" Ordinal="1" xml:lang="en">Note1</Note>
+      <Note Title="Title2" Audience="Audience2" Type="Details" Ordinal="79228162514264337593543950335" xml:lang="en">Note2</Note>
+      <Note Title="Title3" Audience="Audience3" Type="Description" Ordinal="2" xml:lang="fr">Note3</Note>
+    </Notes>
+    <DiscoveryDate>1900-01-01T01:01:01+01:00</DiscoveryDate>
+    <ReleaseDate>1900-01-01T01:01:01+01:00</ReleaseDate>
+    <Involvements>
+      <Involvement Party="Vendor" Status="Open">
+        <Description xml:lang="en">Description1</Description>
+      </Involvement>
+      <Involvement Party="Discoverer" Status="Disputed">
+        <Description xml:lang="en">Description2</Description>
+      </Involvement>
+      <Involvement Party="Coordinator" Status="In Progress">
+        <Description xml:lang="fr">Description3</Description>
+      </Involvement>
+    </Involvements>
+    <CVE>Token1</CVE>
+    <CWE ID="Token1" xml:lang="en">CWE1</CWE>
+    <CWE ID="Token2" xml:lang="en">CWE2</CWE>
+    <CWE ID="Token3" xml:lang="fr">CWE3</CWE>
+    <ProductStatuses>
+      <Status Type="First Affected">
+        <ProductID>Token1</ProductID>
+        <ProductID>Token2</ProductID>
+        <ProductID>Token3</ProductID>
+      </Status>
+      <Status Type="First Fixed">
+        <ProductID>Token4</ProductID>
+        <ProductID>Token5</ProductID>
+        <ProductID>Token6</ProductID>
+      </Status>
+      <Status Type="Fixed">
+        <ProductID>Token7</ProductID>
+        <ProductID>Token8</ProductID>
+        <ProductID>Token9</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact" Date="1900-01-01T01:01:01+01:00">
+        <Description xml:lang="en">Description1</Description>
+        <ProductID>Token1</ProductID>
+        <ProductID>Token2</ProductID>
+        <ProductID>Token3</ProductID>
+        <GroupID>Token1</GroupID>
+        <GroupID>Token2</GroupID>
+        <GroupID>Token3</GroupID>
+      </Threat>
+      <Threat Type="Exploit Status" Date="0001-01-01T00:00:00+01:00">
+        <Description xml:lang="en">Description2</Description>
+        <ProductID>Token4</ProductID>
+        <ProductID>Token5</ProductID>
+        <ProductID>Token6</ProductID>
+        <GroupID>Token4</GroupID>
+        <GroupID>Token5</GroupID>
+        <GroupID>Token6</GroupID>
+      </Threat>
+      <Threat Type="Target Set" Date="9999-12-31T23:59:59.9999999+01:00">
+        <Description xml:lang="fr">Description3</Description>
+        <ProductID>Token7</ProductID>
+        <ProductID>Token8</ProductID>
+        <ProductID>Token9</ProductID>
+        <GroupID>Token7</GroupID>
+        <GroupID>Token8</GroupID>
+        <GroupID>Token9</GroupID>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets>
+      <ScoreSetV2>
+        <BaseScoreV2>0</BaseScoreV2>
+        <TemporalScoreV2>0</TemporalScoreV2>
+        <EnvironmentalScoreV2>0</EnvironmentalScoreV2>
+        <VectorV2>Token1</VectorV2>
+        <ProductID>Token1</ProductID>
+        <ProductID>Token2</ProductID>
+        <ProductID>Token3</ProductID>
+      </ScoreSetV2>
+      <ScoreSetV2>
+        <BaseScoreV2>10</BaseScoreV2>
+        <TemporalScoreV2>10</TemporalScoreV2>
+        <EnvironmentalScoreV2>10</EnvironmentalScoreV2>
+        <VectorV2>Token2</VectorV2>
+        <ProductID>Token4</ProductID>
+        <ProductID>Token5</ProductID>
+        <ProductID>Token6</ProductID>
+      </ScoreSetV2>
+      <ScoreSetV2>
+        <BaseScoreV2>0.1</BaseScoreV2>
+        <TemporalScoreV2>0.1</TemporalScoreV2>
+        <EnvironmentalScoreV2>0.1</EnvironmentalScoreV2>
+        <VectorV2>Token3</VectorV2>
+        <ProductID>Token7</ProductID>
+        <ProductID>Token8</ProductID>
+        <ProductID>Token9</ProductID>
+      </ScoreSetV2>
+      <ScoreSetV3>
+        <BaseScoreV3>0</BaseScoreV3>
+        <TemporalScoreV3>0</TemporalScoreV3>
+        <EnvironmentalScoreV3>0</EnvironmentalScoreV3>
+        <VectorV3>Token1</VectorV3>
+        <ProductID>Token1</ProductID>
+        <ProductID>Token2</ProductID>
+        <ProductID>Token3</ProductID>
+      </ScoreSetV3>
+      <ScoreSetV3>
+        <BaseScoreV3>10</BaseScoreV3>
+        <TemporalScoreV3>10</TemporalScoreV3>
+        <EnvironmentalScoreV3>10</EnvironmentalScoreV3>
+        <VectorV3>Token2</VectorV3>
+        <ProductID>Token4</ProductID>
+        <ProductID>Token5</ProductID>
+        <ProductID>Token6</ProductID>
+      </ScoreSetV3>
+      <ScoreSetV3>
+        <BaseScoreV3>0.1</BaseScoreV3>
+        <TemporalScoreV3>0.1</TemporalScoreV3>
+        <EnvironmentalScoreV3>0.1</EnvironmentalScoreV3>
+        <VectorV3>Token3</VectorV3>
+        <ProductID>Token7</ProductID>
+        <ProductID>Token8</ProductID>
+        <ProductID>Token9</ProductID>
+      </ScoreSetV3>
+    </CVSSScoreSets>
+    <Remediations>
+      <Remediation Type="Workaround" Date="1900-01-01T01:01:01+01:00">
+        <Description xml:lang="en">Description1</Description>
+        <Entitlement xml:lang="en">Entitlement1</Entitlement>
+        <Entitlement xml:lang="en">Entitlement2</Entitlement>
+        <Entitlement xml:lang="fr">Entitlement3</Entitlement>
+        <URL>http://uri1</URL>
+        <ProductID>Token1</ProductID>
+        <ProductID>Token2</ProductID>
+        <ProductID>Token3</ProductID>
+        <GroupID>Token1</GroupID>
+        <GroupID>Token2</GroupID>
+        <GroupID>Token3</GroupID>
+      </Remediation>
+      <Remediation Type="Mitigation" Date="0001-01-01T00:00:00+01:00">
+        <Description xml:lang="en">Description2</Description>
+        <Entitlement xml:lang="de">Entitlement4</Entitlement>
+        <Entitlement xml:lang="da">Entitlement5</Entitlement>
+        <Entitlement xml:lang="el">Entitlement6</Entitlement>
+        <URL>http://uri2</URL>
+        <ProductID>Token4</ProductID>
+        <ProductID>Token5</ProductID>
+        <ProductID>Token6</ProductID>
+        <GroupID>Token4</GroupID>
+        <GroupID>Token5</GroupID>
+        <GroupID>Token6</GroupID>
+      </Remediation>
+      <Remediation Type="Vendor Fix" Date="9999-12-31T23:59:59.9999999+01:00">
+        <Description xml:lang="fr">Description3</Description>
+        <Entitlement xml:lang="it">Entitlement7</Entitlement>
+        <Entitlement xml:lang="en-US">Entitlement8</Entitlement>
+        <Entitlement xml:lang="en">Entitlement9</Entitlement>
+        <URL>http://uri3</URL>
+        <ProductID>Token7</ProductID>
+        <ProductID>Token8</ProductID>
+        <ProductID>Token9</ProductID>
+        <GroupID>Token7</GroupID>
+        <GroupID>Token8</GroupID>
+        <GroupID>Token9</GroupID>
+      </Remediation>
+    </Remediations>
+    <References>
+      <Reference Type="External">
+        <URL>http://uri1</URL>
+        <Description xml:lang="en">Description1</Description>
+      </Reference>
+      <Reference Type="External">
+        <URL>http://uri2</URL>
+        <Description xml:lang="en">Description2</Description>
+      </Reference>
+      <Reference Type="Self">
+        <URL>http://uri3</URL>
+        <Description xml:lang="fr">Description3</Description>
+      </Reference>
+    </References>
+    <Acknowledgments>
+      <Acknowledgment>
+        <Name xml:lang="en">Name1</Name>
+        <Name xml:lang="en">Name2</Name>
+        <Name xml:lang="fr">Name3</Name>
+        <Organization xml:lang="en">Organization1</Organization>
+        <Organization xml:lang="en">Organization2</Organization>
+        <Organization xml:lang="fr">Organization3</Organization>
+        <Description xml:lang="en">Description1</Description>
+        <URL>http://uri1</URL>
+        <URL>http://uri2</URL>
+        <URL>http://uri3</URL>
+      </Acknowledgment>
+      <Acknowledgment>
+        <Name xml:lang="de">Name4</Name>
+        <Name xml:lang="da">Name5</Name>
+        <Name xml:lang="el">Name6</Name>
+        <Organization xml:lang="de">Organization4</Organization>
+        <Organization xml:lang="da">Organization5</Organization>
+        <Organization xml:lang="el">Organization6</Organization>
+        <Description xml:lang="en">Description2</Description>
+        <URL>http://uri4</URL>
+        <URL>http://uri5</URL>
+        <URL>http://uri6</URL>
+      </Acknowledgment>
+      <Acknowledgment>
+        <Name xml:lang="it">Name7</Name>
+        <Name xml:lang="en-US">Name8</Name>
+        <Name xml:lang="en">Name9</Name>
+        <Organization xml:lang="it">Organization7</Organization>
+        <Organization xml:lang="en-US">Organization8</Organization>
+        <Organization xml:lang="en">Organization9</Organization>
+        <Description xml:lang="fr">Description3</Description>
+        <URL>http://uri7</URL>
+        <URL>http://uri8</URL>
+        <URL>http://uri9</URL>
+      </Acknowledgment>
+    </Acknowledgments>
+  </Vulnerability>
+  <Vulnerability Ordinal="79228162514264337593543950335" xmlns="http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v1.2/vuln">
+    <Title xml:lang="en">Title2</Title>
+    <ID SystemName="Token2">Token2</ID>
+    <Notes>
+      <Note Title="Title4" Audience="Audience4" Type="Summary" Ordinal="79228162514264337593543950334" xml:lang="de">Note4</Note>
+      <Note Title="Title5" Audience="Audience5" Type="FAQ" Ordinal="3" xml:lang="da">Note5</Note>
+      <Note Title="Title6" Audience="Audience6" Type="Legal Disclaimer" Ordinal="79228162514264337593543950333" xml:lang="el">Note6</Note>
+    </Notes>
+    <DiscoveryDate>0001-01-01T00:00:00+01:00</DiscoveryDate>
+    <ReleaseDate>0001-01-01T00:00:00+01:00</ReleaseDate>
+    <Involvements>
+      <Involvement Party="User" Status="Completed">
+        <Description xml:lang="de">Description4</Description>
+      </Involvement>
+      <Involvement Party="Other" Status="Contact Attempted">
+        <Description xml:lang="da">Description5</Description>
+      </Involvement>
+      <Involvement Party="Vendor" Status="Not Contacted">
+        <Description xml:lang="el">Description6</Description>
+      </Involvement>
+    </Involvements>
+    <CVE>Token2</CVE>
+    <CWE ID="Token4" xml:lang="de">CWE4</CWE>
+    <CWE ID="Token5" xml:lang="da">CWE5</CWE>
+    <CWE ID="Token6" xml:lang="el">CWE6</CWE>
+    <ProductStatuses>
+      <Status Type="Known Affected">
+        <ProductID>Token10</ProductID>
+        <ProductID>Token11</ProductID>
+        <ProductID>Token12</ProductID>
+      </Status>
+      <Status Type="Known Not Affected">
+        <ProductID>Token13</ProductID>
+        <ProductID>Token14</ProductID>
+        <ProductID>Token15</ProductID>
+      </Status>
+      <Status Type="Last Affected">
+        <ProductID>Token16</ProductID>
+        <ProductID>Token17</ProductID>
+        <ProductID>Token18</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact" Date="1899-11-30T01:01:01+01:00">
+        <Description xml:lang="de">Description4</Description>
+        <ProductID>Token10</ProductID>
+        <ProductID>Token11</ProductID>
+        <ProductID>Token12</ProductID>
+        <GroupID>Token10</GroupID>
+        <GroupID>Token11</GroupID>
+        <GroupID>Token12</GroupID>
+      </Threat>
+      <Threat Type="Exploit Status" Date="1900-02-02T01:01:01+01:00">
+        <Description xml:lang="da">Description5</Description>
+        <ProductID>Token13</ProductID>
+        <ProductID>Token14</ProductID>
+        <ProductID>Token15</ProductID>
+        <GroupID>Token13</GroupID>
+        <GroupID>Token14</GroupID>
+        <GroupID>Token15</GroupID>
+      </Threat>
+      <Threat Type="Target Set" Date="0001-02-02T00:00:00+01:00">
+        <Description xml:lang="el">Description6</Description>
+        <ProductID>Token16</ProductID>
+        <ProductID>Token17</ProductID>
+        <ProductID>Token18</ProductID>
+        <GroupID>Token16</GroupID>
+        <GroupID>Token17</GroupID>
+        <GroupID>Token18</GroupID>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets>
+      <ScoreSetV2>
+        <BaseScoreV2>9.9</BaseScoreV2>
+        <TemporalScoreV2>9.9</TemporalScoreV2>
+        <EnvironmentalScoreV2>9.9</EnvironmentalScoreV2>
+        <VectorV2>Token4</VectorV2>
+        <ProductID>Token10</ProductID>
+        <ProductID>Token11</ProductID>
+        <ProductID>Token12</ProductID>
+      </ScoreSetV2>
+      <ScoreSetV2>
+        <BaseScoreV2>0.2</BaseScoreV2>
+        <TemporalScoreV2>0.2</TemporalScoreV2>
+        <EnvironmentalScoreV2>0.2</EnvironmentalScoreV2>
+        <VectorV2>Token5</VectorV2>
+        <ProductID>Token13</ProductID>
+        <ProductID>Token14</ProductID>
+        <ProductID>Token15</ProductID>
+      </ScoreSetV2>
+      <ScoreSetV2>
+        <BaseScoreV2>9.8</BaseScoreV2>
+        <TemporalScoreV2>9.8</TemporalScoreV2>
+        <EnvironmentalScoreV2>9.8</EnvironmentalScoreV2>
+        <VectorV2>Token6</VectorV2>
+        <ProductID>Token16</ProductID>
+        <ProductID>Token17</ProductID>
+        <ProductID>Token18</ProductID>
+      </ScoreSetV2>
+      <ScoreSetV3>
+        <BaseScoreV3>9.9</BaseScoreV3>
+        <TemporalScoreV3>9.9</TemporalScoreV3>
+        <EnvironmentalScoreV3>9.9</EnvironmentalScoreV3>
+        <VectorV3>Token4</VectorV3>
+        <ProductID>Token10</ProductID>
+        <ProductID>Token11</ProductID>
+        <ProductID>Token12</ProductID>
+      </ScoreSetV3>
+      <ScoreSetV3>
+        <BaseScoreV3>0.2</BaseScoreV3>
+        <TemporalScoreV3>0.2</TemporalScoreV3>
+        <EnvironmentalScoreV3>0.2</EnvironmentalScoreV3>
+        <VectorV3>Token5</VectorV3>
+        <ProductID>Token13</ProductID>
+        <ProductID>Token14</ProductID>
+        <ProductID>Token15</ProductID>
+      </ScoreSetV3>
+      <ScoreSetV3>
+        <BaseScoreV3>9.8</BaseScoreV3>
+        <TemporalScoreV3>9.8</TemporalScoreV3>
+        <EnvironmentalScoreV3>9.8</EnvironmentalScoreV3>
+        <VectorV3>Token6</VectorV3>
+        <ProductID>Token16</ProductID>
+        <ProductID>Token17</ProductID>
+        <ProductID>Token18</ProductID>
+      </ScoreSetV3>
+    </CVSSScoreSets>
+    <Remediations>
+      <Remediation Type="None Available" Date="1899-11-30T01:01:01+01:00">
+        <Description xml:lang="de">Description4</Description>
+        <Entitlement xml:lang="fr">Entitlement10</Entitlement>
+        <Entitlement xml:lang="de">Entitlement11</Entitlement>
+        <Entitlement xml:lang="da">Entitlement12</Entitlement>
+        <URL>http://uri4</URL>
+        <ProductID>Token10</ProductID>
+        <ProductID>Token11</ProductID>
+        <ProductID>Token12</ProductID>
+        <GroupID>Token10</GroupID>
+        <GroupID>Token11</GroupID>
+        <GroupID>Token12</GroupID>
+      </Remediation>
+      <Remediation Type="Will Not Fix" Date="1900-02-02T01:01:01+01:00">
+        <Description xml:lang="da">Description5</Description>
+        <Entitlement xml:lang="el">Entitlement13</Entitlement>
+        <Entitlement xml:lang="it">Entitlement14</Entitlement>
+        <Entitlement xml:lang="en-US">Entitlement15</Entitlement>
+        <URL>http://uri5</URL>
+        <ProductID>Token13</ProductID>
+        <ProductID>Token14</ProductID>
+        <ProductID>Token15</ProductID>
+        <GroupID>Token13</GroupID>
+        <GroupID>Token14</GroupID>
+        <GroupID>Token15</GroupID>
+      </Remediation>
+      <Remediation Type="Workaround" Date="0001-02-02T00:00:00+01:00">
+        <Description xml:lang="el">Description6</Description>
+        <Entitlement xml:lang="en">Entitlement16</Entitlement>
+        <Entitlement xml:lang="fr">Entitlement17</Entitlement>
+        <Entitlement xml:lang="de">Entitlement18</Entitlement>
+        <URL>http://uri6</URL>
+        <ProductID>Token16</ProductID>
+        <ProductID>Token17</ProductID>
+        <ProductID>Token18</ProductID>
+        <GroupID>Token16</GroupID>
+        <GroupID>Token17</GroupID>
+        <GroupID>Token18</GroupID>
+      </Remediation>
+    </Remediations>
+    <References>
+      <Reference Type="External">
+        <URL>http://uri4</URL>
+        <Description xml:lang="de">Description4</Description>
+      </Reference>
+      <Reference Type="Self">
+        <URL>http://uri5</URL>
+        <Description xml:lang="da">Description5</Description>
+      </Reference>
+      <Reference Type="External">
+        <URL>http://uri6</URL>
+        <Description xml:lang="el">Description6</Description>
+      </Reference>
+    </References>
+    <Acknowledgments>
+      <Acknowledgment>
+        <Name xml:lang="fr">Name10</Name>
+        <Name xml:lang="de">Name11</Name>
+        <Name xml:lang="da">Name12</Name>
+        <Organization xml:lang="fr">Organization10</Organization>
+        <Organization xml:lang="de">Organization11</Organization>
+        <Organization xml:lang="da">Organization12</Organization>
+        <Description xml:lang="de">Description4</Description>
+        <URL>http://uri10</URL>
+        <URL>http://uri11</URL>
+        <URL>http://uri12</URL>
+      </Acknowledgment>
+      <Acknowledgment>
+        <Name xml:lang="el">Name13</Name>
+        <Name xml:lang="it">Name14</Name>
+        <Name xml:lang="en-US">Name15</Name>
+        <Organization xml:lang="el">Organization13</Organization>
+        <Organization xml:lang="it">Organization14</Organization>
+        <Organization xml:lang="en-US">Organization15</Organization>
+        <Description xml:lang="da">Description5</Description>
+        <URL>http://uri13</URL>
+        <URL>http://uri14</URL>
+        <URL>http://uri15</URL>
+      </Acknowledgment>
+      <Acknowledgment>
+        <Name xml:lang="en">Name16</Name>
+        <Name xml:lang="fr">Name17</Name>
+        <Name xml:lang="de">Name18</Name>
+        <Organization xml:lang="en">Organization16</Organization>
+        <Organization xml:lang="fr">Organization17</Organization>
+        <Organization xml:lang="de">Organization18</Organization>
+        <Description xml:lang="el">Description6</Description>
+        <URL>http://uri16</URL>
+        <URL>http://uri17</URL>
+        <URL>http://uri18</URL>
+      </Acknowledgment>
+    </Acknowledgments>
+  </Vulnerability>
+  <Vulnerability Ordinal="2" xmlns="http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v1.2/vuln">
+    <Title xml:lang="fr">Title3</Title>
+    <ID SystemName="Token3">Token3</ID>
+    <Notes>
+      <Note Title="Title7" Audience="Audience7" Type="Other" Ordinal="4" xml:lang="it">Note7</Note>
+      <Note Title="Title8" Audience="Audience8" Type="General" Ordinal="79228162514264337593543950332" xml:lang="en-US">Note8</Note>
+      <Note Title="Title9" Audience="Audience9" Type="Details" Ordinal="5" xml:lang="en">Note9</Note>
+    </Notes>
+    <DiscoveryDate>9999-12-31T23:59:59.9999999+01:00</DiscoveryDate>
+    <ReleaseDate>9999-12-31T23:59:59.9999999+01:00</ReleaseDate>
+    <Involvements>
+      <Involvement Party="Discoverer" Status="Open">
+        <Description xml:lang="it">Description7</Description>
+      </Involvement>
+      <Involvement Party="Coordinator" Status="Disputed">
+        <Description xml:lang="en-US">Description8</Description>
+      </Involvement>
+      <Involvement Party="User" Status="In Progress">
+        <Description xml:lang="en">Description9</Description>
+      </Involvement>
+    </Involvements>
+    <CVE>Token3</CVE>
+    <CWE ID="Token7" xml:lang="it">CWE7</CWE>
+    <CWE ID="Token8" xml:lang="en-US">CWE8</CWE>
+    <CWE ID="Token9" xml:lang="en">CWE9</CWE>
+    <ProductStatuses>
+      <Status Type="Recommended">
+        <ProductID>Token19</ProductID>
+        <ProductID>Token20</ProductID>
+        <ProductID>Token21</ProductID>
+      </Status>
+      <Status Type="First Affected">
+        <ProductID>Token22</ProductID>
+        <ProductID>Token23</ProductID>
+        <ProductID>Token24</ProductID>
+      </Status>
+      <Status Type="First Fixed">
+        <ProductID>Token25</ProductID>
+        <ProductID>Token26</ProductID>
+        <ProductID>Token27</ProductID>
+      </Status>
+    </ProductStatuses>
+    <Threats>
+      <Threat Type="Impact" Date="9999-11-29T23:59:59.9999999+01:00">
+        <Description xml:lang="it">Description7</Description>
+        <ProductID>Token19</ProductID>
+        <ProductID>Token20</ProductID>
+        <ProductID>Token21</ProductID>
+        <GroupID>Token19</GroupID>
+        <GroupID>Token20</GroupID>
+        <GroupID>Token21</GroupID>
+      </Threat>
+      <Threat Type="Exploit Status" Date="1899-10-29T01:01:01+02:00">
+        <Description xml:lang="en-US">Description8</Description>
+        <ProductID>Token22</ProductID>
+        <ProductID>Token23</ProductID>
+        <ProductID>Token24</ProductID>
+        <GroupID>Token22</GroupID>
+        <GroupID>Token23</GroupID>
+        <GroupID>Token24</GroupID>
+      </Threat>
+      <Threat Type="Target Set" Date="1900-03-06T01:01:01+01:00">
+        <Description xml:lang="en">Description9</Description>
+        <ProductID>Token25</ProductID>
+        <ProductID>Token26</ProductID>
+        <ProductID>Token27</ProductID>
+        <GroupID>Token25</GroupID>
+        <GroupID>Token26</GroupID>
+        <GroupID>Token27</GroupID>
+      </Threat>
+    </Threats>
+    <CVSSScoreSets>
+      <ScoreSetV2>
+        <BaseScoreV2>0.3</BaseScoreV2>
+        <TemporalScoreV2>0.3</TemporalScoreV2>
+        <EnvironmentalScoreV2>0.3</EnvironmentalScoreV2>
+        <VectorV2>Token7</VectorV2>
+        <ProductID>Token19</ProductID>
+        <ProductID>Token20</ProductID>
+        <ProductID>Token21</ProductID>
+      </ScoreSetV2>
+      <ScoreSetV2>
+        <BaseScoreV2>9.7</BaseScoreV2>
+        <TemporalScoreV2>9.7</TemporalScoreV2>
+        <EnvironmentalScoreV2>9.7</EnvironmentalScoreV2>
+        <VectorV2>Token8</VectorV2>
+        <ProductID>Token22</ProductID>
+        <ProductID>Token23</ProductID>
+        <ProductID>Token24</ProductID>
+      </ScoreSetV2>
+      <ScoreSetV2>
+        <BaseScoreV2>0.4</BaseScoreV2>
+        <TemporalScoreV2>0.4</TemporalScoreV2>
+        <EnvironmentalScoreV2>0.4</EnvironmentalScoreV2>
+        <VectorV2>Token9</VectorV2>
+        <ProductID>Token25</ProductID>
+        <ProductID>Token26</ProductID>
+        <ProductID>Token27</ProductID>
+      </ScoreSetV2>
+      <ScoreSetV3>
+        <BaseScoreV3>0.3</BaseScoreV3>
+        <TemporalScoreV3>0.3</TemporalScoreV3>
+        <EnvironmentalScoreV3>0.3</EnvironmentalScoreV3>
+        <VectorV3>Token7</VectorV3>
+        <ProductID>Token19</ProductID>
+        <ProductID>Token20</ProductID>
+        <ProductID>Token21</ProductID>
+      </ScoreSetV3>
+      <ScoreSetV3>
+        <BaseScoreV3>9.7</BaseScoreV3>
+        <TemporalScoreV3>9.7</TemporalScoreV3>
+        <EnvironmentalScoreV3>9.7</EnvironmentalScoreV3>
+        <VectorV3>Token8</VectorV3>
+        <ProductID>Token22</ProductID>
+        <ProductID>Token23</ProductID>
+        <ProductID>Token24</ProductID>
+      </ScoreSetV3>
+      <ScoreSetV3>
+        <BaseScoreV3>0.4</BaseScoreV3>
+        <TemporalScoreV3>0.4</TemporalScoreV3>
+        <EnvironmentalScoreV3>0.4</EnvironmentalScoreV3>
+        <VectorV3>Token9</VectorV3>
+        <ProductID>Token25</ProductID>
+        <ProductID>Token26</ProductID>
+        <ProductID>Token27</ProductID>
+      </ScoreSetV3>
+    </CVSSScoreSets>
+    <Remediations>
+      <Remediation Type="Mitigation" Date="9999-11-29T23:59:59.9999999+01:00">
+        <Description xml:lang="it">Description7</Description>
+        <Entitlement xml:lang="da">Entitlement19</Entitlement>
+        <Entitlement xml:lang="el">Entitlement20</Entitlement>
+        <Entitlement xml:lang="it">Entitlement21</Entitlement>
+        <URL>http://uri7</URL>
+        <ProductID>Token19</ProductID>
+        <ProductID>Token20</ProductID>
+        <ProductID>Token21</ProductID>
+        <GroupID>Token19</GroupID>
+        <GroupID>Token20</GroupID>
+        <GroupID>Token21</GroupID>
+      </Remediation>
+      <Remediation Type="Vendor Fix" Date="1899-10-29T01:01:01+02:00">
+        <Description xml:lang="en-US">Description8</Description>
+        <Entitlement xml:lang="en-US">Entitlement22</Entitlement>
+        <Entitlement xml:lang="en">Entitlement23</Entitlement>
+        <Entitlement xml:lang="fr">Entitlement24</Entitlement>
+        <URL>http://uri8</URL>
+        <ProductID>Token22</ProductID>
+        <ProductID>Token23</ProductID>
+        <ProductID>Token24</ProductID>
+        <GroupID>Token22</GroupID>
+        <GroupID>Token23</GroupID>
+        <GroupID>Token24</GroupID>
+      </Remediation>
+      <Remediation Type="None Available" Date="1900-03-06T01:01:01+01:00">
+        <Description xml:lang="en">Description9</Description>
+        <Entitlement xml:lang="de">Entitlement25</Entitlement>
+        <Entitlement xml:lang="da">Entitlement26</Entitlement>
+        <Entitlement xml:lang="el">Entitlement27</Entitlement>
+        <URL>http://uri9</URL>
+        <ProductID>Token25</ProductID>
+        <ProductID>Token26</ProductID>
+        <ProductID>Token27</ProductID>
+        <GroupID>Token25</GroupID>
+        <GroupID>Token26</GroupID>
+        <GroupID>Token27</GroupID>
+      </Remediation>
+    </Remediations>
+    <References>
+      <Reference Type="Self">
+        <URL>http://uri7</URL>
+        <Description xml:lang="it">Description7</Description>
+      </Reference>
+      <Reference Type="External">
+        <URL>http://uri8</URL>
+        <Description xml:lang="en-US">Description8</Description>
+      </Reference>
+      <Reference Type="Self">
+        <URL>http://uri9</URL>
+        <Description xml:lang="en">Description9</Description>
+      </Reference>
+    </References>
+    <Acknowledgments>
+      <Acknowledgment>
+        <Name xml:lang="da">Name19</Name>
+        <Name xml:lang="el">Name20</Name>
+        <Name xml:lang="it">Name21</Name>
+        <Organization xml:lang="da">Organization19</Organization>
+        <Organization xml:lang="el">Organization20</Organization>
+        <Organization xml:lang="it">Organization21</Organization>
+        <Description xml:lang="it">Description7</Description>
+        <URL>http://uri19</URL>
+        <URL>http://uri20</URL>
+        <URL>http://uri21</URL>
+      </Acknowledgment>
+      <Acknowledgment>
+        <Name xml:lang="en-US">Name22</Name>
+        <Name xml:lang="en">Name23</Name>
+        <Name xml:lang="fr">Name24</Name>
+        <Organization xml:lang="en-US">Organization22</Organization>
+        <Organization xml:lang="en">Organization23</Organization>
+        <Organization xml:lang="fr">Organization24</Organization>
+        <Description xml:lang="en-US">Description8</Description>
+        <URL>http://uri22</URL>
+        <URL>http://uri23</URL>
+        <URL>http://uri24</URL>
+      </Acknowledgment>
+      <Acknowledgment>
+        <Name xml:lang="de">Name25</Name>
+        <Name xml:lang="da">Name26</Name>
+        <Name xml:lang="el">Name27</Name>
+        <Organization xml:lang="de">Organization25</Organization>
+        <Organization xml:lang="da">Organization26</Organization>
+        <Organization xml:lang="el">Organization27</Organization>
+        <Description xml:lang="en">Description9</Description>
+        <URL>http://uri25</URL>
+        <URL>http://uri26</URL>
+        <URL>http://uri27</URL>
+      </Acknowledgment>
+    </Acknowledgments>
+  </Vulnerability>
+</cvrfdoc>

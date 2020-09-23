@@ -1,0 +1,758 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "title": "ABCDEFGHIJKLMNOPQR",
+    "publisher": {
+      "type": "discoverer",
+      "contact_details": "ABCDEFGHIJKLMNOPQRS",
+      "issuing_authority": "ABCDEFGHIJKLMNOPQRSTU",
+      "vendor_id": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    },
+    "type": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+    "tracking": {
+      "current_release_date": "ABCDEFGHIJKL",
+      "id": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      "initial_release_date": "ABCD",
+      "revision_history": [
+        {
+          "number": "0.5",
+          "date": "ABCDEFGHIJKLMNOPQRSTU",
+          "description": "ABCDEFGHIJKLMNOPQRSTUVWX"
+        }
+      ],
+      "status": "interim",
+      "version": "3.9",
+      "aliases": [
+        "ABCDEFGHIJKLMNOPQRST"
+      ],
+      "generator": {
+        "engine": "ABCDEFGHIJKLMNOPQ",
+        "date": "ABCDEFGHIJKLMNOPQRST"
+      }
+    },
+    "acknowledgments": [
+      {
+        "names": null,
+        "organizations": 466.25,
+        "description": "ABCDEFGHIJKLMNOPQRSTUVWX",
+        "urls": [
+          "ABCDE"
+        ]
+      }
+    ],
+    "aggregate_severity": {
+      "text": "ABCDEFGHIJKL",
+      "namespace": "ABCDEFGH"
+    },
+    "distribution": {
+      "text": "ABCDEFGHIJKLMNOPQRSTUV",
+      "tlp": {
+        "label": "WHITE",
+        "url": "ABCDEFGHIJKLMN"
+      }
+    },
+    "lang": "BAt-$",
+    "source_lang": "lP-0*",
+    "notes": [
+      {
+        "type": "summary",
+        "text": "ABCDEFGHIJKLMNOPQRSTUV",
+        "audience": "ABCDE",
+        "title": "ABCDEFGH"
+      }
+    ],
+    "references": [
+      {
+        "url": "ABCDEFGHIJKLMNOPQ",
+        "description": "ABCDEFG",
+        "type": "external"
+      }
+    ]
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "name": "ABCDEFGHIJKLMNOPQRSTUVW",
+        "type": "language",
+        "branches": [
+          {
+            "name": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+            "type": "vendor",
+            "branches": [
+              {
+                "name": "ABCDEFGHIJKLMNOP",
+                "type": "architecture",
+                "branches": [
+                  {
+                    "name": "ABCDEFGHIJKLMNOPQRSTU",
+                    "type": "host_name",
+                    "branches": [
+                      {
+                        "name": "ABCDEFGHIJKLMNOPQRS",
+                        "type": "service_pack",
+                        "branches": [
+                          {
+                            "name": "ABCDEFG",
+                            "type": "product_name",
+                            "branches": [
+                              {
+                                "name": "ABCDEFGHIJKLMNOPQRS",
+                                "type": "legacy",
+                                "branches": [
+                                  {
+                                    "name": "ABCDE",
+                                    "type": "legacy",
+                                    "branches": [
+                                      {
+                                        "name": "ABCDEFGHIJKLMNOPQRSTUV",
+                                        "type": "language",
+                                        "branches": [
+                                          {
+                                            "name": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+                                            "type": "language",
+                                            "branches": [
+                                              {
+                                                "name": "ABCDEFGHIJK",
+                                                "type": "legacy",
+                                                "branches": [
+                                                  {
+                                                    "name": "ABCDEFGHIJKLMNOPQRST",
+                                                    "type": "language",
+                                                    "branches": [
+                                                      {
+                                                        "name": "ABCDEF",
+                                                        "type": "specification",
+                                                        "branches": [
+                                                          {
+                                                            "name": "ABCDEFGHIJKLMNOPQRSTUVW",
+                                                            "type": "product_name",
+                                                            "branches": [
+                                                              {
+                                                                "name": "ABCDEFGHIJKLMNOPQRSTUVW",
+                                                                "type": "patch_level",
+                                                                "branches": [
+                                                                  {
+                                                                    "name": "ABCDEFGHIJKLMN",
+                                                                    "type": "product_family",
+                                                                    "branches": [
+                                                                      {
+                                                                        "name": "ABCDEFGHIJKL",
+                                                                        "type": "patch_level",
+                                                                        "branches": [
+                                                                          {
+                                                                            "name": "ABCDEFGHIJKLMNOPQR",
+                                                                            "type": "product_name",
+                                                                            "branches": [
+                                                                              {
+                                                                                "name": "ABCDEFG",
+                                                                                "type": "patch_level",
+                                                                                "branches": [
+                                                                                  {
+                                                                                    "name": "ABCDEFGHIJKLMNOPQRSTUVW",
+                                                                                    "type": "patch_level",
+                                                                                    "branches": [
+                                                                                      {
+                                                                                        "name": "ABCDEFGHIJKLMNO",
+                                                                                        "type": "vendor",
+                                                                                        "branches": [
+                                                                                          {
+                                                                                            "name": "ABCDEFGHIJKL",
+                                                                                            "type": "product_name",
+                                                                                            "branches": [
+                                                                                              {
+                                                                                                "name": "ABCDEFGHIJKLMNOPQRSTU",
+                                                                                                "type": "product_family",
+                                                                                                "branches": [
+                                                                                                  {
+                                                                                                    "name": "ABCDEFGHIJ",
+                                                                                                    "type": "legacy",
+                                                                                                    "branches": [
+                                                                                                      {
+                                                                                                        "name": "ABCDEFG",
+                                                                                                        "type": "vendor",
+                                                                                                        "branches": [
+                                                                                                          {
+                                                                                                            "name": "ABCDEF",
+                                                                                                            "type": "vendor",
+                                                                                                            "branches": [
+                                                                                                              {
+                                                                                                                "name": "ABCDEFGHIJKLMNOPQR",
+                                                                                                                "type": "architecture",
+                                                                                                                "branches": [
+                                                                                                                  {
+                                                                                                                    "name": "ABCDEF",
+                                                                                                                    "type": "host_name",
+                                                                                                                    "branches": [
+                                                                                                                      {
+                                                                                                                        "name": "ABCDEFGH",
+                                                                                                                        "type": "host_name",
+                                                                                                                        "branches": [
+                                                                                                                          {
+                                                                                                                            "name": "ABCDEFGH",
+                                                                                                                            "type": "product_family",
+                                                                                                                            "branches": [
+                                                                                                                              {
+                                                                                                                                "name": "ABCDEFGH",
+                                                                                                                                "type": "vendor",
+                                                                                                                                "branches": [
+                                                                                                                                  {
+                                                                                                                                    "name": "ABCDEFGHIJKL",
+                                                                                                                                    "type": "product_family",
+                                                                                                                                    "branches": [
+                                                                                                                                      {
+                                                                                                                                        "name": "ABCDEFG",
+                                                                                                                                        "type": "language",
+                                                                                                                                        "branches": [
+                                                                                                                                          {
+                                                                                                                                            "name": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+                                                                                                                                            "type": "host_name",
+                                                                                                                                            "branches": [
+                                                                                                                                              {
+                                                                                                                                                "name": "ABCDEFGHIJ",
+                                                                                                                                                "type": "service_pack",
+                                                                                                                                                "branches": [
+                                                                                                                                                  {
+                                                                                                                                                    "name": "ABCDEFGHIJKLMN",
+                                                                                                                                                    "type": "product_family",
+                                                                                                                                                    "branches": [
+                                                                                                                                                      {
+                                                                                                                                                        "name": "ABCDEFGHIJK",
+                                                                                                                                                        "type": "product_version",
+                                                                                                                                                        "branches": [
+                                                                                                                                                          {
+                                                                                                                                                            "name": "ABCDEFGHIJKLMNOPQRSTUVW",
+                                                                                                                                                            "type": "service_pack",
+                                                                                                                                                            "branches": [
+                                                                                                                                                              {
+                                                                                                                                                                "name": "ABCDEFGHIJKLMNOPQRST",
+                                                                                                                                                                "type": "language",
+                                                                                                                                                                "branches": [
+                                                                                                                                                                  {
+                                                                                                                                                                    "name": "ABCDEFGHIJKLMNOPQRSTUVWX",
+                                                                                                                                                                    "type": "service_pack",
+                                                                                                                                                                    "branches": [
+                                                                                                                                                                      {
+                                                                                                                                                                        "name": "ABCDEFGHIJKLMNOPQRST",
+                                                                                                                                                                        "type": "vendor",
+                                                                                                                                                                        "branches": [
+                                                                                                                                                                          {
+                                                                                                                                                                            "name": "ABCDEFGHI",
+                                                                                                                                                                            "type": "product_name",
+                                                                                                                                                                            "branches": [
+                                                                                                                                                                              {
+                                                                                                                                                                                "name": "ABCDEFGHIJ",
+                                                                                                                                                                                "type": "specification",
+                                                                                                                                                                                "branches": [
+                                                                                                                                                                                  {
+                                                                                                                                                                                    "name": "ABCDEFGHIJKLM",
+                                                                                                                                                                                    "type": "product_name",
+                                                                                                                                                                                    "branches": [
+                                                                                                                                                                                      {
+                                                                                                                                                                                        "name": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+                                                                                                                                                                                        "type": "specification",
+                                                                                                                                                                                        "branches": [
+                                                                                                                                                                                          {
+                                                                                                                                                                                            "name": "ABCDEFGHIJKLMNOPQR",
+                                                                                                                                                                                            "type": "product_family",
+                                                                                                                                                                                            "branches": [
+                                                                                                                                                                                              {
+                                                                                                                                                                                                "name": "ABCDEFGHIJKLMN",
+                                                                                                                                                                                                "type": "service_pack",
+                                                                                                                                                                                                "branches": [
+                                                                                                                                                                                                  {
+                                                                                                                                                                                                    "name": "ABCDEFGHIJKLMNOPQRSTU",
+                                                                                                                                                                                                    "type": "patch_level",
+                                                                                                                                                                                                    "branches": [
+                                                                                                                                                                                                      {
+                                                                                                                                                                                                        "name": "ABCDEFGHIJKLMNO",
+                                                                                                                                                                                                        "type": "host_name",
+                                                                                                                                                                                                        "branches": [
+                                                                                                                                                                                                          "Error: Iteration depth exceeded. Possibly the result of a rule in the schema that forces the creation of an infinitely deep tree of objects (i.e. 'A' contains 1-n 'A')"
+                                                                                                                                                                                                        ],
+                                                                                                                                                                                                        "product": {
+                                                                                                                                                                                                          "product_id": "Error: Iteration depth exceeded. Possibly the result of a rule in the schema that forces the creation of an infinitely deep tree of objects (i.e. 'A' contains 1-n 'A')",
+                                                                                                                                                                                                          "name": "Error: Iteration depth exceeded. Possibly the result of a rule in the schema that forces the creation of an infinitely deep tree of objects (i.e. 'A' contains 1-n 'A')",
+                                                                                                                                                                                                          "cpe": "Error: Iteration depth exceeded. Possibly the result of a rule in the schema that forces the creation of an infinitely deep tree of objects (i.e. 'A' contains 1-n 'A')"
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                      }
+                                                                                                                                                                                                    ],
+                                                                                                                                                                                                    "product": {
+                                                                                                                                                                                                      "product_id": "ABCDEFGHIJKLM",
+                                                                                                                                                                                                      "name": "ABCDEFGHIJK",
+                                                                                                                                                                                                      "cpe": "cpe:/78::**%:"
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                  }
+                                                                                                                                                                                                ],
+                                                                                                                                                                                                "product": {
+                                                                                                                                                                                                  "product_id": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+                                                                                                                                                                                                  "name": "ABCDEFGHIJKLMNOPQR",
+                                                                                                                                                                                                  "cpe": "cpe:/N:^o:~"
+                                                                                                                                                                                                }
+                                                                                                                                                                                              }
+                                                                                                                                                                                            ],
+                                                                                                                                                                                            "product": {
+                                                                                                                                                                                              "product_id": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+                                                                                                                                                                                              "name": "ABCDEFG",
+                                                                                                                                                                                              "cpe": "cpe:001.4Lo"
+                                                                                                                                                                                            }
+                                                                                                                                                                                          }
+                                                                                                                                                                                        ],
+                                                                                                                                                                                        "product": {
+                                                                                                                                                                                          "product_id": "ABCDEFGHI",
+                                                                                                                                                                                          "name": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                                                                                                                                                                                          "cpe": "cpe:/:P::HO:70"
+                                                                                                                                                                                        }
+                                                                                                                                                                                      }
+                                                                                                                                                                                    ],
+                                                                                                                                                                                    "product": {
+                                                                                                                                                                                      "product_id": "ABCDEFGHIJKLMNOPQRST",
+                                                                                                                                                                                      "name": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB",
+                                                                                                                                                                                      "cpe": "cpe:/"
+                                                                                                                                                                                    }
+                                                                                                                                                                                  }
+                                                                                                                                                                                ],
+                                                                                                                                                                                "product": {
+                                                                                                                                                                                  "product_id": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                                                                                                                                                                                  "name": "ABCDEFGHIJKLMNOPQRSTU",
+                                                                                                                                                                                  "cpe": "cpe:8.0':"
+                                                                                                                                                                                }
+                                                                                                                                                                              }
+                                                                                                                                                                            ],
+                                                                                                                                                                            "product": {
+                                                                                                                                                                              "product_id": "ABCDEFGHIJKLMN",
+                                                                                                                                                                              "name": "ABCDEFGHIJKL",
+                                                                                                                                                                              "cpe": "cpe:/a:"
+                                                                                                                                                                            }
+                                                                                                                                                                          }
+                                                                                                                                                                        ],
+                                                                                                                                                                        "product": {
+                                                                                                                                                                          "product_id": "ABCDEFGHIJKLMNOPQRSTUV",
+                                                                                                                                                                          "name": "ABCDEFGHIJKLM",
+                                                                                                                                                                          "cpe": "cpe:/_["
+                                                                                                                                                                        }
+                                                                                                                                                                      }
+                                                                                                                                                                    ],
+                                                                                                                                                                    "product": {
+                                                                                                                                                                      "product_id": "ABCDEFGHIJK",
+                                                                                                                                                                      "name": "ABCDEFGHI",
+                                                                                                                                                                      "cpe": "cpe:/"
+                                                                                                                                                                    }
+                                                                                                                                                                  }
+                                                                                                                                                                ],
+                                                                                                                                                                "product": {
+                                                                                                                                                                  "product_id": "ABCDEFGHIJKLMNOP",
+                                                                                                                                                                  "name": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+                                                                                                                                                                  "cpe": "cpe:9.6|"
+                                                                                                                                                                }
+                                                                                                                                                              }
+                                                                                                                                                            ],
+                                                                                                                                                            "product": {
+                                                                                                                                                              "product_id": "ABCDEFGHIJKLMNOPQR",
+                                                                                                                                                              "name": "ABCDEFGHIJK",
+                                                                                                                                                              "cpe": "cpe:5.1"
+                                                                                                                                                            }
+                                                                                                                                                          }
+                                                                                                                                                        ],
+                                                                                                                                                        "product": {
+                                                                                                                                                          "product_id": "ABCDEFGHI",
+                                                                                                                                                          "name": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+                                                                                                                                                          "cpe": "cpe:/@Aj5"
+                                                                                                                                                        }
+                                                                                                                                                      }
+                                                                                                                                                    ],
+                                                                                                                                                    "product": {
+                                                                                                                                                      "product_id": "ABCDEFGHIJKLMNOPQRS",
+                                                                                                                                                      "name": "ABCDEFGHIJKLM",
+                                                                                                                                                      "cpe": "cpe:9.6*n"
+                                                                                                                                                    }
+                                                                                                                                                  }
+                                                                                                                                                ],
+                                                                                                                                                "product": {
+                                                                                                                                                  "product_id": "ABCDE",
+                                                                                                                                                  "name": "ABCDEFGHIJKLMNOP",
+                                                                                                                                                  "cpe": "cpe:35.0ly:;"
+                                                                                                                                                }
+                                                                                                                                              }
+                                                                                                                                            ],
+                                                                                                                                            "product": {
+                                                                                                                                              "product_id": "ABCDEFGHIJK",
+                                                                                                                                              "name": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+                                                                                                                                              "cpe": "cpe:644.3"
+                                                                                                                                            }
+                                                                                                                                          }
+                                                                                                                                        ],
+                                                                                                                                        "product": {
+                                                                                                                                          "product_id": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB",
+                                                                                                                                          "name": "ABCDEFGHIJ",
+                                                                                                                                          "cpe": "cpe:/#:"
+                                                                                                                                        }
+                                                                                                                                      }
+                                                                                                                                    ],
+                                                                                                                                    "product": {
+                                                                                                                                      "product_id": "ABCDEFGHIJKLMNOPQRS",
+                                                                                                                                      "name": "ABCD",
+                                                                                                                                      "cpe": "cpe:32.7"
+                                                                                                                                    }
+                                                                                                                                  }
+                                                                                                                                ],
+                                                                                                                                "product": {
+                                                                                                                                  "product_id": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+                                                                                                                                  "name": "ABCDEFGHIJK",
+                                                                                                                                  "cpe": "cpe:2.0"
+                                                                                                                                }
+                                                                                                                              }
+                                                                                                                            ],
+                                                                                                                            "product": {
+                                                                                                                              "product_id": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+                                                                                                                              "name": "ABCDEFGHIJKL",
+                                                                                                                              "cpe": "cpe:/0:)::j"
+                                                                                                                            }
+                                                                                                                          }
+                                                                                                                        ],
+                                                                                                                        "product": {
+                                                                                                                          "product_id": "ABCDEFGHIJKLMN",
+                                                                                                                          "name": "ABCDEFGHIJKLMN",
+                                                                                                                          "cpe": "cpe:580308.9::"
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    ],
+                                                                                                                    "product": {
+                                                                                                                      "product_id": "ABCDEFGHIJKLMNOPQRST",
+                                                                                                                      "name": "ABCDEFGHIJKLMNOPQRST",
+                                                                                                                      "cpe": "cpe:9.9-u:"
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                ],
+                                                                                                                "product": {
+                                                                                                                  "product_id": "ABCDE",
+                                                                                                                  "name": "ABCD",
+                                                                                                                  "cpe": "cpe:9.0::"
+                                                                                                                }
+                                                                                                              }
+                                                                                                            ],
+                                                                                                            "product": {
+                                                                                                              "product_id": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                                                                                                              "name": "ABCDEFGHIJKLMNOPQRSTUVWX",
+                                                                                                              "cpe": "cpe:1.6{:_::::"
+                                                                                                            }
+                                                                                                          }
+                                                                                                        ],
+                                                                                                        "product": {
+                                                                                                          "product_id": "ABCDEFGHIJKLMNOPQRSTU",
+                                                                                                          "name": "ABCDEFGHIJKLMNO",
+                                                                                                          "cpe": "cpe:0.0G-/"
+                                                                                                        }
+                                                                                                      }
+                                                                                                    ],
+                                                                                                    "product": {
+                                                                                                      "product_id": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+                                                                                                      "name": "ABCDEFGHIJKLMN",
+                                                                                                      "cpe": "cpe:5583.0:::"
+                                                                                                    }
+                                                                                                  }
+                                                                                                ],
+                                                                                                "product": {
+                                                                                                  "product_id": "ABCDEFGHIJKLMNOPQRSTUVW",
+                                                                                                  "name": "ABCDEFGHIJKL",
+                                                                                                  "cpe": "cpe:20.1:5:)9pu"
+                                                                                                }
+                                                                                              }
+                                                                                            ],
+                                                                                            "product": {
+                                                                                              "product_id": "ABCDEFG",
+                                                                                              "name": "ABCDEFGHIJKL",
+                                                                                              "cpe": "cpe:/:XsNC:~"
+                                                                                            }
+                                                                                          }
+                                                                                        ],
+                                                                                        "product": {
+                                                                                          "product_id": "ABCDEFGHIJKLMNO",
+                                                                                          "name": "ABCDEFGHIJKLMNOP",
+                                                                                          "cpe": "cpe:/"
+                                                                                        }
+                                                                                      }
+                                                                                    ],
+                                                                                    "product": {
+                                                                                      "product_id": "ABCDEFGHIJKLM",
+                                                                                      "name": "ABCDEFGHIJKLMNOPQRST",
+                                                                                      "cpe": "cpe:86.7I:::*$s"
+                                                                                    }
+                                                                                  }
+                                                                                ],
+                                                                                "product": {
+                                                                                  "product_id": "ABCDEFGHIJKLMN",
+                                                                                  "name": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+                                                                                  "cpe": "cpe:/i"
+                                                                                }
+                                                                              }
+                                                                            ],
+                                                                            "product": {
+                                                                              "product_id": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+                                                                              "name": "ABCDEFGHIJKLM",
+                                                                              "cpe": "cpe:/o:e"
+                                                                            }
+                                                                          }
+                                                                        ],
+                                                                        "product": {
+                                                                          "product_id": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+                                                                          "name": "ABCDE",
+                                                                          "cpe": "cpe:707329.5q"
+                                                                        }
+                                                                      }
+                                                                    ],
+                                                                    "product": {
+                                                                      "product_id": "ABCDEFGHIJKLMNOPQR",
+                                                                      "name": "ABCDEFGHIJKLMNOPQRST",
+                                                                      "cpe": "cpe:2.71k"
+                                                                    }
+                                                                  }
+                                                                ],
+                                                                "product": {
+                                                                  "product_id": "ABCDEFGHIJKLMNOPQRSTU",
+                                                                  "name": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+                                                                  "cpe": "cpe:/e:'%Y>:"
+                                                                }
+                                                              }
+                                                            ],
+                                                            "product": {
+                                                              "product_id": "ABCD",
+                                                              "name": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB",
+                                                              "cpe": "cpe:3.2U"
+                                                            }
+                                                          }
+                                                        ],
+                                                        "product": {
+                                                          "product_id": "ABCDEFGHIJKLMN",
+                                                          "name": "ABCDEFGHIJKLMNOPQR",
+                                                          "cpe": "cpe:/DTD"
+                                                        }
+                                                      }
+                                                    ],
+                                                    "product": {
+                                                      "product_id": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+                                                      "name": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                                                      "cpe": "cpe:/::L"
+                                                    }
+                                                  }
+                                                ],
+                                                "product": {
+                                                  "product_id": "ABCDEFGHIJ",
+                                                  "name": "ABCDEFGHIJKLMNOPQRS",
+                                                  "cpe": "cpe:/io'+dC:"
+                                                }
+                                              }
+                                            ],
+                                            "product": {
+                                              "product_id": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                                              "name": "ABCD",
+                                              "cpe": "cpe:/:[4v::"
+                                            }
+                                          }
+                                        ],
+                                        "product": {
+                                          "product_id": "ABCDEFGHIJKLMNOPQRSTUV",
+                                          "name": "ABCDEFGHIJKL",
+                                          "cpe": "cpe:8.8:"
+                                        }
+                                      }
+                                    ],
+                                    "product": {
+                                      "product_id": "ABCDEFGHIJ",
+                                      "name": "ABCD",
+                                      "cpe": "cpe:4.4*"
+                                    }
+                                  }
+                                ],
+                                "product": {
+                                  "product_id": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                                  "name": "ABCDEFGHIJKLMN",
+                                  "cpe": "cpe:/d]"
+                                }
+                              }
+                            ],
+                            "product": {
+                              "product_id": "ABCDEFGHIJKLMN",
+                              "name": "ABCDEFGH",
+                              "cpe": "cpe:/gR:-68::"
+                            }
+                          }
+                        ],
+                        "product": {
+                          "product_id": "ABCD",
+                          "name": "ABCDEFGHIJKLMNOPQRSTUVWXYZABC",
+                          "cpe": "cpe:/:"
+                        }
+                      }
+                    ],
+                    "product": {
+                      "product_id": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+                      "name": "ABCD",
+                      "cpe": "cpe:/."
+                    }
+                  }
+                ],
+                "product": {
+                  "product_id": "ABCDEFGHIJKLMNOPQ",
+                  "name": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+                  "cpe": "cpe:/"
+                }
+              }
+            ],
+            "product": {
+              "product_id": "ABCDEFGHIJKLMNOPQRSTUVWX",
+              "name": "ABCDEFGHIJKLMNOPQRSTU",
+              "cpe": "cpe:701.2'B:Pe"
+            }
+          }
+        ],
+        "product": {
+          "product_id": "ABCDEFGHIJKLMNOPQ",
+          "name": "ABCDEFGHIJKLMNOPQ",
+          "cpe": "cpe:6.6?/"
+        }
+      }
+    ],
+    "full_product_names": [
+      {
+        "product_id": "ABCDEFGHIJKL",
+        "name": "ABCDEFGHIJKLMNOPQRSTUVWXYZAB",
+        "cpe": "cpe:/1Ed:"
+      }
+    ],
+    "product_groups": [
+      {
+        "group_id": "ABCDEFGHI",
+        "product_ids": [
+          "ABCDEFGHIJK",
+          "ABCDEFGHIJKL"
+        ],
+        "description": "ABCDEFGHIJKLMNOPQRS"
+      }
+    ],
+    "relationships": [
+      {
+        "product_reference": "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+        "relates_to_product_reference": "ABCDEFGHIJKLMNOPQRST",
+        "relationship_type": "optional_component_of",
+        "full_product_names": [
+          {
+            "product_id": "ABCDEFGHIJKLMNO",
+            "name": "ABCDEFGHIJKLMNOPQRSTUVW",
+            "cpe": "cpe:91.4M"
+          }
+        ]
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "acknowledgments": [
+        {
+          "names": 700,
+          "organizations": null,
+          "description": "ABCDEFGHIJKLMNOPQRSTU",
+          "urls": [
+            "ABCDEFGHIJKLMNOPQRSTUVWXY"
+          ]
+        }
+      ],
+      "cve": "CVE-0886-7577",
+      "cwe": {
+        "id": "CWE-7",
+        "description": "ABCDE"
+      },
+      "scores": [
+        {}
+      ],
+      "discovery_date": "ABCDEFGHIJKLMNOPQR",
+      "id": {
+        "system_name": "ABCDE",
+        "text": "ABCDEFGHIJKLMNOPQRSTUVWXYZA"
+      },
+      "involvements": [
+        {
+          "party": "other",
+          "status": "not_contacted",
+          "description": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        }
+      ],
+      "notes": [
+        {
+          "type": "other",
+          "text": "ABCDEFGHIJKLMNOPQRSTUVWX",
+          "audience": "ABCDEFGHIJKLMNOP",
+          "title": "ABCDEFGHIJKLMNOPQRST"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "ABCDEFGHIJKLMNO"
+        ],
+        "first_fixed": [
+          "ABCDEFGHIJKLMNOPQRSTUVWXYZAB"
+        ],
+        "recommended": [
+          "ABCDEFG"
+        ],
+        "known_affected": [
+          "ABCDEFGHIJKLMNOP"
+        ],
+        "first_affected": [
+          "ABCDE"
+        ],
+        "last_affected": [
+          "ABCDEFGHIJKLMNO"
+        ],
+        "known_not_affected": [
+          "ABCDEFGHIJKLMNOPQ"
+        ],
+        "under_investigation": [
+          "ABCDEFGHIJKLMNOPQR"
+        ]
+      },
+      "references": [
+        {
+          "url": "ABCDEFGHI",
+          "description": "ABCDEFGHIJKL",
+          "type": "external"
+        }
+      ],
+      "release_date": "ABCDEFGH",
+      "remediations": [
+        {
+          "description": "ABCDEFGHI",
+          "type": "none_available",
+          "date": "ABCDEFGH",
+          "entitlements": [
+            "ABCDEFGHIJKLMNOPQRSTU"
+          ],
+          "group_ids": [
+            "ABCDEFGHIJKLMNOPQRST"
+          ],
+          "product_ids": [
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+          ],
+          "restart_required": {
+            "type": "parent",
+            "description": "ABCDEFGHIJKLMNOPQRS"
+          },
+          "url": "ABCDEFGHIJKL"
+        }
+      ],
+      "threats": [
+        {
+          "description": "ABCDEFGHIJKLMNOPQ",
+          "type": "impact",
+          "date": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+          "product_ids": [
+            "ABCDEFGH"
+          ],
+          "group_ids": [
+            "ABCDEFGHIJKLMNOPQRSTUVW"
+          ]
+        }
+      ],
+      "title": "ABCDEFGHI"
+    }
+  ]
+}
